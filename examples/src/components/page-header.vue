@@ -2,7 +2,7 @@
   <div class="page-header">
     <div class="page-header__top">
       <h1 class="page-header__logo">
-        <a href="#">Kui</a>
+        <a href="#"></a>
       </h1>
       <ul class="page-header__navs">
         <li class="page-header__item">
@@ -44,14 +44,14 @@ export default {
     float: left;
     & a {
       display: block;
-      /* width: 78px; */
-      height: 40px;
-      line-height: 40px;
-      background-image: url(https://github.com/SunShineKG/K-UI/blob/master/examples/assets/github.png);
+      width: 220px;
+      height: 30px;
+      line-height: 30px;
+      background-image: url('../../assets/logo.png');
       background-size: contain;
       background-repeat: no-repeat;
-      margin: 10px 0 0 20px;
-      padding-left: 45px;
+      margin: 18px 0 0 20px;
+      padding-left: 115px;
       font-size: 25px;
       font-family: monospace;
       color: #2c3e50;
@@ -97,7 +97,7 @@ export default {
     width: 22px;
     height: 60px;
     overflow: hidden;
-    background-image: url(https://img.yzcdn.cn/upload_files/2017/03/30/Fil9peDfgzvk3kj-oFCsElS4FS1x.png);
+    background-image: url('../../assets/github.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: 17px;
