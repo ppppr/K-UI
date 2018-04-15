@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style lang="postcss">
+<style lang="less">
 .side-nav {
 	flex: 0 0 250px;
 	box-sizing: border-box;
