@@ -1,7 +1,7 @@
-import Hello from '../packages/hello/index.js'
+import KButton from '../packages/button'
 
 const components = [
-  Hello
+  KButton
 ]
 
 const install = function (Vue) {
@@ -14,6 +14,10 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
 
+export {
+  KButton
+}
+
 export default [
-  Hello
+  install
 ]

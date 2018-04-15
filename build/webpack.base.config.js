@@ -116,13 +116,7 @@ module.exports = {
             options: {
               sourceMap: true,
             },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
+          }
         ]
       },
       {

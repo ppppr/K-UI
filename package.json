@@ -17,6 +17,10 @@
     "prepublish": "npm run dist"
   },
   "dependencies": {
+    "node-sass": "^4.8.3",
+    "postcss-import": "^11.1.0",
+    "postcss-url": "^7.3.2",
+    "sass-loader": "^7.0.1"
   },
   "peerDependencies": {
     "vue": "^2.5.2",

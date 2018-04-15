@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Kui from '../../src'
+import Kui from 'kui'
 import App from './App'
 import router from './router.config'
 

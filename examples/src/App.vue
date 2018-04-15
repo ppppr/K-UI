@@ -9,3 +9,7 @@ export default {
   name: 'App'
 }
 </script>
+
+<style lang="less">
+@import url('../../src/styles/index.less');
+</style>

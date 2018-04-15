@@ -1,0 +1,38 @@
+.k-button {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid;
+  transition: all .1s ease-in;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+.k-button-normal {
+  border-color: @border-color-base;
+  &:hover {
+    color: @primary-color;
+    background-color: @hover-normal-bg-color;
+    border-color: @hover-normal-border-color;
+  }
+}
+.k-button-primary {
+  color: #fff;
+  background-color: @primary-color;
+  &:hover {
+    opacity: .8
+  }
+}
+.k-button-danger {
+  color: #fff;
+  background-color: @error-color;
+  &:hover {
+    opacity: .8
+  }
+}
+.k-button-small {
+  padding: 6px 12px
+}
+.k-button-mini {
+  padding: 3px 6px
+}
