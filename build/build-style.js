@@ -16,4 +16,4 @@ gulp.task('css', function () {
     .pipe(gulp.dest('../dist/styles'));
 });
 
-gulp.task('default', ['css', 'fonts']);
+gulp.task('default', ['css']);

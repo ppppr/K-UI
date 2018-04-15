@@ -8,6 +8,14 @@ const pkg = require('../package.json');
 function resolve(dir) {
   return path.join(__dirname, '..', dir);
 }
+// 定义辅助函数wrap，将<code>标签都加上名为'hljs'的class
+function wrap(render) {
+  return function () {
+    return render.apply(this, arguments)
+      .replace('<code v-pre class="', '<code class="hljs ')
+      .replace('<code>', '<code class="hljs">')
+  }
+}
 
 module.exports = {
   // 加载器
@@ -101,6 +109,21 @@ module.exports = {
             },
           },
         ]
+      },
+      {
+        test: /\.md$/,
+        loaders: 'vue-markdown-loader',
+        options: {
+          preventExtract: true,
+          preprocess: function (MarkdownIt, source) {
+            // 为table标签加上名为'table'的class
+            MarkdownIt.renderer.rules.table_open = function () {
+              return '<table class="table">'
+            };
+            MarkdownIt.renderer.rules.fence = wrap(MarkdownIt.renderer.rules.fence);
+            return source;
+          }
+        }
       },
       {
         test: /\.scss$/,
