@@ -1,14 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import components from '../docs'
+import routes from '../docs'
+import installation from '../docs/installation.md'
 import KButton from '../pages/button'
 
 Vue.use(Router)
 
-const routes = [{
-  path: '/',
+routes.push({
+  path: '/test',
   component: KButton
-}, ...components]
+})
 
 export default new Router({
   routes: routes
