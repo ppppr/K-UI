@@ -2,7 +2,7 @@
   <div class="page-header">
     <div class="page-header__top">
       <h1 class="page-header__logo">
-        <a href="#"></a>
+        <a href="#">K-UI</a>
       </h1>
       <ul class="page-header__navs">
         <li class="page-header__item">
@@ -46,15 +46,16 @@ export default {
       display: block;
       width: 220px;
       height: 30px;
-      line-height: 30px;
+      line-height: 38px;
       background-image: url('../../assets/logo.png');
       background-size: contain;
       background-repeat: no-repeat;
       margin: 18px 0 0 20px;
       padding-left: 115px;
-      font-size: 25px;
-      font-family: monospace;
-      color: #2c3e50;
+      font-size: 18px;
+      font-family: Dosis,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+      color: #333;
+      font-weight: normal
     }
   }
   .page-header__navs {
