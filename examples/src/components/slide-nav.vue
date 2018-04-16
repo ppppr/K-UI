@@ -20,7 +20,12 @@
             <li class="nav-item">
               <router-link
                 active-class="active"
-                :to="base + '/button'" >button</router-link>
+                :to="base + '/button'" >button 按钮</router-link>
+            </li>
+						<li class="nav-item">
+              <router-link
+                active-class="active"
+                :to="base + '/color'" >color 色彩</router-link>
             </li>
           </ul>
         </div>
