@@ -11,9 +11,6 @@
         <li class="page-header__item">
           <a href="https://github.com/SunShineKG/K-UI" class="page-header__github" target="_blank"></a>
         </li>
-        <li class="page-header__item">
-          <span class="page-header__link"></span>
-        </li>
       </ul>
     </div>
   </div>
