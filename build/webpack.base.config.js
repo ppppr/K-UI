@@ -16,7 +16,6 @@ function wrap(render) {
       .replace('<code>', '<code class="hljs">')
   }
 }
-
 module.exports = {
   // 加载器
   module: {
@@ -156,7 +155,8 @@ module.exports = {
     extensions: ['.js', '.vue'],
     alias: {
       'vue': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
+      'packages': resolve('packages')
     }
   },
   plugins: [

@@ -1,0 +1,64 @@
+.k-tree {
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    li{
+      list-style: none;
+      margin: 8px 0;
+      padding: 0;
+      white-space: nowrap;
+      outline: none;
+    }
+  }
+  li{
+    ul{
+      margin: 0;
+      padding: 0 0 0 18px;
+    }
+  }
+  &-title {
+    display: inline-block;
+    margin: 0;
+    padding: 0 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    vertical-align: top;
+    color: #333;
+    transition: all .1s ease-in-out;
+    &:hover {
+      background-color: tint(@primary-color, 90%);
+    }
+    &-selected, &-selected:hover{
+      background-color: tint(@primary-color, 80%);
+    }
+  }
+  &-arrow{
+    cursor: pointer;
+    width: 10px;
+    text-align: center;
+    display: inline-block;
+    height: 10px;
+    background-image: url('../common/right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    i {
+      transition: all @transition-time ease-in-out;
+    }
+    &-open{
+      i {
+        transform: rotate(90deg);
+      }
+    }
+    //&-hidden{
+    //    cursor: auto;
+    //    i{
+    //        display: none;
+    //    }
+    //}
+    &-disabled{
+      cursor: disabled;
+    }
+  }
+}

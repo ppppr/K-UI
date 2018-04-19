@@ -1,7 +1,9 @@
 import KButton from '../packages/button'
+import KTree from '../packages/tree'
 
 const components = [
-  KButton
+  KButton,
+  KTree
 ]
 
 const install = function (Vue) {
@@ -15,7 +17,8 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 
 export {
-  KButton
+  KButton,
+  KTree
 }
 
 export default [

@@ -6,7 +6,6 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const webpackBaseConfig = require('./webpack.base.config.js');
 
-
 const webpackConfig = merge(webpackBaseConfig, {
   devtool: 'eval-source-map',
   plugins: [
