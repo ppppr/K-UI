@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="less">
-@import url('../../src/styles/index.less');
+@import url('../../packages/styles/index.less');
 @import url('../assets/docs.less');
 @import url('highlight.js/styles/monokai-sublime.css');
 </style>
