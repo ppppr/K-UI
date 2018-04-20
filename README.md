@@ -3,8 +3,8 @@
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
   </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+  <a href="https://travis-ci.org/ppppr/K-UI">
+    <img src="https://travis-ci.org/ppppr/K-UI.svg?branch=master">
   </a>
 </p>
 
