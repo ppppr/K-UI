@@ -6,6 +6,9 @@
   <a href="https://travis-ci.org/ppppr/K-UI">
     <img src="https://travis-ci.org/ppppr/K-UI.svg?branch=master">
   </a>
+  <a href="https://coveralls.io/github/ppppr/K-UI?branch=master">
+    <img src="https://coveralls.io/repos/github/ppppr/K-UI/badge.svg?branch=master">
+  </a>
 </p>
 
 > A Vue.js 2.0 UI Toolkit for Web
