@@ -16,19 +16,19 @@ module.exports = merge(webpackBaseConfig, {
 
   // 入口
   entry: {
-    main: './examples/src',
+    main: path.join(__dirname, '../examples/src'),
     vendors: ['vue', 'vue-router']
   },
   // 输出
   output: {
-    path: path.join(__dirname, './examples/dist'),
+    path: path.join(__dirname, '../examples/dist'),
     publicPath: '',
     filename: '[name].js',
     chunkFilename: '[name].chunk.js'
   },
   resolve: {
     alias: {
-      kui: '../../src/index',
+      kui: path.join(__dirname, '../src'),
       vue: 'vue/dist/vue.esm.js'
       // vue: 'vue/dist/vue.runtime.js'
     }
