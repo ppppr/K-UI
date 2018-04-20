@@ -1,9 +1,11 @@
 language: node_js
 cache: bundler
 node_js: stable
+secure: 9EoZYiNwqewm1pFmbxZgb3WyB4soZObcm
 install:
 |
     npm install -g yarn --registry http://registry.npmjs.org
     yarn install
 script:
     - npm run test
+after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
