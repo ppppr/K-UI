@@ -7,10 +7,6 @@ Vue.config.productionTip = false
 
 Vue.use(...Kui)
 
-// const { Hello } = Kui
-// Vue.component(Hello.name, Hello)
-
-/* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
