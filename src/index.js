@@ -6,6 +6,8 @@ const components = [
   KTree
 ]
 
+console.log(111);
+
 const install = function (Vue) {
   components.map(component => {
     Vue.component(component.name, component)
